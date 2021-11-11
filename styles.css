@@ -29,7 +29,15 @@ body {
     left: 50%;
 }
 
-div.U1 {
+#yt{
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50% -50%);
+    position: absolute;
+    top: 82%;
+    left: 50%;
+}
+
+div.tl {
     background: radial-gradient(#fff617 0%, #565307 100%);
     width: 15%;
     height: auto;
@@ -82,4 +90,5 @@ span.abt {
     text-align: center;
     width: 100%;
     height: 100%;
+    font-size: 35px;
 }
