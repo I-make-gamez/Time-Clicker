@@ -5,22 +5,17 @@ const c = document.getElementById("#c");
 const l = document.getElementById("#l");
 const t = document.getElementsByClassName(".U1")[0];
 
+c.addEventListener("click", function() {
+    year += 1;
+    if (year >= 1) {
+        bcad = "AD";
+    }
+    if (year <= 1) {
+        bcad = "BC";
+    }
+    l.innerHTML = `Year: `
+});
 
-if (c) {
-    c.addEventListener("click", function() {
-        year += 1;
-        if (year >= 1) {
-            bcad = "AD";
-        }
-        if (year <= 1) {
-            bcad = "BC";
-        }
-        l.innerHTML = "Year: " + Math.abs(year) + bcad;
-    });
-}
-
-if (t) {
-    t.addEventListener("click", function() {
-        console.log("t is defined!");
-    });
-}
+t.addEventListener("click", function() {
+    window.alert('T is defined!')
+});
