@@ -6,9 +6,19 @@ const yt = document.getElementById('yt');
 var year = -500000;
 var yeta = 0
 var bcad = "BC";
+var tl_open = false
+let ans = undefined;
+let ask = window.prompt;
 
 t.addEventListener("click", function() {
-    window.alert('T is defined!');
+    if(yeta >= 20){
+        yeta -= 20;
+        year -= 20    
+        l.innerHTML = `Year: ${Math.abs(year)} ${bcad}`;
+        yt.innerHTML = `Years Travelled: ${yeta}`
+        tl_open = true
+        unlock_tl();
+    }
 }, false);
 
 c.addEventListener("click", function() {
@@ -23,3 +33,7 @@ c.addEventListener("click", function() {
     l.innerHTML = `Year: ${Math.abs(year)} ${bcad}`;
     yt.innerHTML = `Years Travelled: ${yeta}`
 }, false);
+
+function unlock_tl(){
+    t.style.opacity = 0;
+}
