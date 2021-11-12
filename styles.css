@@ -46,7 +46,7 @@ div.tl {
     margin-top: 10px;
     margin-left: 10px;
     position: fixed;
-    top: 10%;
+    top: 25%;
 }
 
 header h1 {
@@ -98,7 +98,7 @@ span.abt {
 .powerups {
     background: radial-gradient(#fff617 0%, #565307 100%);
     width: 200%;
-    height: 50px;
+    height: 100px;
     text-align: left;
     overflow: hidden;
     border-top: 0px solid #000;
@@ -108,4 +108,11 @@ span.abt {
     position: fixed;
     top: 0;
     left: 1;
+}
+
+#le{
+    height: 100px;
+    width: 75px;
+    border: 10px solid #000;
+    opacity: 0;
 }
