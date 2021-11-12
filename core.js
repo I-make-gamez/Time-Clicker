@@ -3,6 +3,7 @@ const le = document.getElementById('le');
 const c = document.getElementById("c");
 const l = document.getElementById("l");
 const yt = document.getElementById('yt');
+const vers
 
 var year = -500000;
 var yeta = 0;
