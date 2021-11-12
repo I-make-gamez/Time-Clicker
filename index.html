@@ -10,24 +10,26 @@
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body onload="updateVersion();">
     <div class="powerups">
         <img id="le" src="assets/leap.png">
     </div>
     <div class="nav-bar">
         <a class="active" href="index.html">Home</a>
-        <a href="stats.html">Stats</a>
+        <a href="ac.html">Stats</a>
         <a href="about.html">About</a>
         <a id="achive">Achivements</a>
-        <a id="ver">Version: 0.6.5</a>        
+        <a id="ver">Version: </a>        
     </div>
+    <h2 id="pow">Powerups:</h2>
     <div class="tl">
         <h1>Time Leap</h1>
         <p>Unlocks Time Leap<br>Cost: 20 years</p>
     </div>
+    <h2 id="upgr">Upgrades:</h2>
     <div class="tbd">
         <h1>Name TBD</h1>
-        <p>Increases click power by 200%</p>
+        <p>Increases click power by 200%<br>Cost: 500 years</p>
     </div>
     <img id="c" src="assets/clicker.png" alt="clicker">
     <h1 id="l">Year: 500,000BC</h1>

@@ -37,6 +37,26 @@ body {
     left: 50%;
 }
 
+#pow{
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: fixed;
+    top: 17%;
+    left: 40px;
+    font-size: 40px;
+}
+
+#upgr{
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    position: fixed;
+    top: 17%;
+    font-size: 40px;
+    right: 50px;
+}
+
 div.tl {
     background: radial-gradient(#fff617 0%, #565307 100%);
     width: 15%;
@@ -46,8 +66,22 @@ div.tl {
     margin-top: 10px;
     margin-left: 10px;
     position: fixed;
-    top: 25%;
+    top: 26%;
 }
+
+div.tbd {
+    background: radial-gradient(#fff617 0%, #565307 100%);
+    width: 15%;
+    height: auto;
+    text-align: center;
+    border: 10px solid #000;
+    margin-top: 10px;
+    margin-right: 10px;
+    position: fixed;
+    top: 26%;
+    right: 5px;
+}
+
 
 header h1 {
     margin: 0px;
@@ -115,4 +149,12 @@ span.abt {
     width: 75px;
     border: 10px solid #000;
     opacity: 0;
+}
+
+#achive{
+    cursor: pointer;
+}
+
+#ver{
+    cursor: pointer;
 }
