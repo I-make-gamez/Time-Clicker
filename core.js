@@ -8,7 +8,8 @@ var year = -500000;
 var yeta = 0;
 var bcad = "BC";
 var tl_open = false;
-var tl_timer = NaN;
+var tl_timer = 11;
+var tlx = 0;
 let ans = undefined;
 let ask = window.prompt;
 
@@ -39,10 +40,23 @@ c.addEventListener("click", function() {
 le.addEventListener('click', function() {
     switch(tl_open){
         case true:
-            timeLeap;
-            break;
-        case false:
-            alert(`Stop Cheating!`)
+            tl_open = false
+            year += 50 + tlx;
+            yeta += 50 + tlx; 
+            l.innerHTML = `Year: ${Math.abs(year)} ${bcad}`;
+            yt.innerHTML = `Years Travelled: ${yeta}`
+            tl_timer = 10;
+            le.style.opacity = 0
+            setInterval(() => {
+                tl_timer -= 1
+                if(tl_timer = 0){
+                    le.style.opacity = 1;
+                    tl_open = true
+                    return;
+                }else{
+                    return;
+                };
+            }, 1000);
             break;
     }
 }, false);
@@ -50,8 +64,4 @@ le.addEventListener('click', function() {
 function unlock_tl(){
     t.style.opacity = 0;
     le.style.opacity = 1;
-}
-
-function timeLeap(){
-    
 }
