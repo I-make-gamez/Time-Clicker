@@ -49,14 +49,14 @@ le.addEventListener('click', function() {
             le.style.opacity = 0
             setInterval(() => {
                 tl_timer -= 1
-                if(tl_timer = 0){
+                if(tl_timer <= 1){
                     le.style.opacity = 1;
                     tl_open = true
                     return;
                 }else{
                     return;
                 };
-            }, 1000);
+            }, 1300);
             break;
     }
 }, false);
